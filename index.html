@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parv | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Intro Page -->
+    <div class="intro-container" id="intro-page">
+        <h1 id="animated-name">Parv</h1>
+        <a href="#" class="enter-button" onclick="showAboutPage()">Enter Portfolio</a>
+    </div>
+
+    <!-- About Page -->
+    <div class="about" id="about-page">
+        <header>
+            <h1>Parv</h1>
+            <p>Coder | Trader</p>
+        </header>
+
+        <section class="summary">
+            <h2>About Me</h2>
+            <p>I am a full-stack trader, skilled in finance, with a growing interest in coding. My journey in trading and finance has honed my strategic mindset, and now, as I venture into the world of programming, I am dedicated to building skills that complement my expertise in trading.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Trading</li>
+                <li>Finance</li>
+                <li>Best Trader</li>
+                <li>Programming (Beginner)</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <a href="mailto:parvgoyal234@gmail.com" class="button">Email Me</a>
+            <a href="https://www.linkedin.com/in/parv-361397336" target="_blank" class="button">Connect on LinkedIn</a>
+        </section>
+    </div>
+
+    <script>
+        function showAboutPage() {
+            document.getElementById("intro-page").style.display = "none";
+            document.getElementById("about-page").style.display = "block";
+        }
+    </script>
+</body>
+</html>

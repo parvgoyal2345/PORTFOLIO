@@ -1,0 +1,138 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+}
+
+a {
+    color: #00e5ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #80d8ff;
+}
+
+/* Intro Page Styles */
+.intro-container {
+    text-align: center;
+}
+
+#animated-name {
+    font-size: 5em;
+    font-weight: bold;
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+}
+
+.enter-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00e5ff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.enter-button:hover {
+    background-color: #80d8ff;
+}
+
+/* About Page Styles */
+.about {
+    display: none;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.about header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about header h1 {
+    font-size: 2.5em;
+    color: #00e5ff;
+}
+
+.about header p {
+    font-size: 1.2em;
+    color: #80d8ff;
+}
+
+.about section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+    font-size: 1.8em;
+    color: #00e5ff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00e5ff;
+    padding-bottom: 5px;
+}
+
+.about .skills ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.about .skills li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #80d8ff;
+}
+
+.about p, .about li {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Contact Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 5px;
+    color: #121212;
+    font-weight: bold;
+    background-color: #00e5ff;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.5), 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.button:hover {
+    background-color: #80d8ff;
+    box-shadow: 0 0 15px rgba(128, 216, 255, 0.7), 0 0 25px rgba(128, 216, 255, 0.5);
+    color: #121212;
+}
